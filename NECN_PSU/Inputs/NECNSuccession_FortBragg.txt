@@ -1,0 +1,110 @@
+>>SE single cell
+LandisData	"NECN Succession"
+Timestep  1
+
+SeedingAlgorithm  WardSeedDispersal
+
+InitialCommunities      	./FortBragg_TreeCommunityList.txt
+InitialCommunitiesMap   	./ICMap_FortBragg.tif
+ClimateConfigFile		./climate-generator-baseline.txt
+
+
+SoilDepthMapName				./Depth_FortBragg.tif
+SoilDrainMapName				./Drainage_FortBragg.tif
+SoilBaseFlowMapName				./StormFlow_FortBragg.tif
+SoilStormFlowMapName				./StormFlow_FortBragg.tif
+SoilFieldCapacityMapName		./FieldCapacity_FortBragg.tif   << starting here I had to set minimum to 0.01  PAIN in the ass.
+SoilWiltingPointMapName			./WiltPoint_FortBragg.tif  
+SoilPercentSandMapName			./Sand_FortBragg.tif     
+SoilPercentClayMapName			./Clay_FortBragg.tif    
+InitialSOM1CsurfMapName			./SOM1surfC_FortBragg.tif   
+InitialSOM1NsurfMapName			./SOM1surfN_FortBragg.tif 
+InitialSOM1CsoilMapName			./SOM1soilC_FortBragg.tif 
+InitialSOM1NsoilMapName			./SOM1soilN_FortBragg.tif 
+InitialSOM2CMapName				./SOM2C_FortBragg.tif 
+InitialSOM2NMapName				./SOM2N_FortBragg.tif 
+InitialSOM3CMapName				./SOM3C_FortBragg.tif 
+InitialSOM3NMapName				./SOM3N_FortBragg.tif 
+InitialDeadWoodSurfaceMapName	./CWD_FortBragg.tif 
+InitialDeadCoarseRootsMapName	./CWD_FortBragg.tif   <<placeholder
+
+CalibrateMode 	yes
+SmokeModelOutputs yes
+WaterDecayFunction Ratio <<Linear or Ratio
+
+ProbabilityEstablishAdjust 	1.0
+InitialMineralN			4.0
+InitialFineFuels		0.1
+AtmosphericNSlope		0.0001
+AtmosphericNIntercept	0.259
+Latitude				35.5
+DenitrificationRate		0.05
+DecayRateSurf			0.4
+DecayRateSOM1			0.75
+DecayRateSOM2			0.08
+DecayRateSOM3			0.0012
+
+MaximumLAI
+
+>> Shade	Max LAI
+>> Class	
+>> ----------	--------------------	
+	1	1 
+	2	2.5 
+	3	3.5 
+	4	6
+	5	8
+		
+
+LightEstablishmentTable
+>> Spp Shade	Probability
+>> Class	by Actual Shade
+>> ----------	--------------------	
+>>Below from Melissa August 2014
+	1	1	1	0.25	0.1	0	0
+	2	0.5	0.5	1	0.25	0.1	0
+	3	0.1	0.5	1	1	0.5	0.1
+	4	0.1	0.25	0.5	0.5	1	0.25
+	5	0	0.1	0.25	0.25	0.5	1
+	
+SpeciesParameters
+>> Species   Funct	N-fix?	GDD	  GDD	Min	Max	    Leaf	Epi-	Leaf	FRoot	Wood	CRoot	Leaf  FRoot     Wood    CRoot  Littr 	MaxANPP MaxAGB
+>>	         ional	Y/N	    Min	  Max	Jan	Drought	Long	cormic	Lign%	Lign%	Lign%	Lign%	CN    CN        CN      CN     CN	
+>> 	         Type				  Temp			            re-
+>>           								                sprout
+LobPine	  	1    N	    3165  5993   4   0.360   3       N       0.2     0.2     0.35    0.35   50    50        380     170    100      600     16504
+LongleafPine	1    N      4000  7000   3   0.423    2       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
+ShortPine	1    N      2660  5076   -1   0.423    3       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
+VirgPine	1    N      2660  5076   -1   0.423    3       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
+WhiteOak	2    N      1200  5537   -14   0.330   1       N       0.367   0.23    0.23    0.23   24    48        500     333    55       859     21200
+TurkeyOak       4    N      4000  7000   1   0.423    1       N       0.293   0.23    0.23    0.35   24    48        500     333    55	100  10000
+SweetGum        2    N      2660  5993   -1   0.300   1       N       0.331   0.255   0.255   0.255  25    45        90      90     45     100   10000
+RedMaple	2    N      1260  6600   -18  0.23    1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
+TulipTree  	2    N      2300  5993   -2  0.16     1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
+Dogwood  	2    N      2300  5993   -2  0.16     1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
+Sourwood	2    N      3788  7000   1   0.300   1       N       0.293   0.23    0.23    0.23   24    48        500     333    55  100 10000
+>>quermari_blackjackoak           N      4000  7000   1   0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
+>>querfalc_southredoak	         N      4000  7000   -5  0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
+>>quermari           N      4000  7000   1   0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
+
+
+FunctionalGroupParameters
+>>Functional 	functional 	PPDF1	PPDF2	PPDF3	PPDF4	FCFRAC	BTOLAI	KLAI	MAXLAI	PPRPTS2	PPRPTS3	Wood	Monthly		AGE_Mort	leaf_drop     CRootFrac FRootFRac   Notes	
+Pine	        1            28.0    45.0    4.5     4.5     0.37    -0.8  750.0    10.0     1.0     0.8     0.6     0.003       15          10            0.23      0.2
+Hardwood        2            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
+VirgPine        3            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
+TurkeyOak       4            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
+
+FireReductionParameters
+>> Based on Stacy Drury's lit review/analysis. See 'Fuel consumption based on fire severity class.docx'
+>>	Severity	WoodLitter	Litter	SOM
+>>	Fire		Reduct		Reduct	Reduction
+	1			0.05		1.0 		1.0 <<0.1     
+	2			0.2			1.0			1.0 <<0.5
+	3			0.4			1.0			1.0
+
+HarvestReductionParameters
+>>	Name			WoodLitter	Litter	SOM			CohortWood	CohortLeaf
+>>					Reduct		Reduct	Reduction	Removal		Removal
+ 	 
+			
