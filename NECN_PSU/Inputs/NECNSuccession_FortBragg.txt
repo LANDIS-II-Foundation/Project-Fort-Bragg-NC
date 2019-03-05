@@ -4,8 +4,8 @@ Timestep  1
 
 SeedingAlgorithm  WardSeedDispersal
 
-InitialCommunities      	./FortBragg_TreeCommunityList.txt
-InitialCommunitiesMap   	./ICMap_FortBragg.tif
+InitialCommunities      	./IC_List_FortBragg.txt
+InitialCommunitiesMap   	./IC_Map_FortBragg.tif
 ClimateConfigFile		./climate-generator-baseline.txt
 
 
@@ -28,7 +28,7 @@ InitialSOM3NMapName				./SOM3N_FortBragg.tif
 InitialDeadWoodSurfaceMapName	./CWD_FortBragg.tif 
 InitialDeadCoarseRootsMapName	./CWD_FortBragg.tif   <<placeholder
 
-CalibrateMode 	yes
+CalibrateMode 	no
 SmokeModelOutputs yes
 WaterDecayFunction Ratio <<Linear or Ratio
 
@@ -72,28 +72,19 @@ SpeciesParameters
 >>	         ional	Y/N	    Min	  Max	Jan	Drought	Long	cormic	Lign%	Lign%	Lign%	Lign%	CN    CN        CN      CN     CN	
 >> 	         Type				  Temp			            re-
 >>           								                sprout
-LobPine	  	1    N	    3165  5993   4   0.360   3       N       0.2     0.2     0.35    0.35   50    50        380     170    100      600     16504
-LongleafPine	1    N      4000  7000   3   0.423    2       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
-ShortPine	1    N      2660  5076   -1   0.423    3       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
-VirgPine	1    N      2660  5076   -1   0.423    3       N       0.2     0.2     0.35    0.35   50    50        380     170    100  100 10000
-WhiteOak	2    N      1200  5537   -14   0.330   1       N       0.367   0.23    0.23    0.23   24    48        500     333    55       859     21200
-TurkeyOak       4    N      4000  7000   1   0.423    1       N       0.293   0.23    0.23    0.35   24    48        500     333    55	100  10000
-SweetGum        2    N      2660  5993   -1   0.300   1       N       0.331   0.255   0.255   0.255  25    45        90      90     45     100   10000
-RedMaple	2    N      1260  6600   -18  0.23    1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
-TulipTree  	2    N      2300  5993   -2  0.16     1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
-Dogwood  	2    N      2300  5993   -2  0.16     1       N       0.223   0.255   0.255   0.255  20    45        90      90     45	    588      20900
-Sourwood	2    N      3788  7000   1   0.300   1       N       0.293   0.23    0.23    0.23   24    48        500     333    55  100 10000
->>quermari_blackjackoak           N      4000  7000   1   0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
->>querfalc_southredoak	         N      4000  7000   -5  0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
->>quermari           N      4000  7000   1   0.423   1       N       0.293   0.23    0.23    0.35   24    48        500     333    55
-
+LobPine	  	1    N	    3165  5993   4   0.360   3       N       0.28	0.2	0.27	0.35	50	50	663	170	100	175	 40000 <<Zach used 100, seems too low based on https://www.researchgate.net/publication/325101658_Carbon_accumulation_in_loblolly_pine_plantations_is_increased_by_fertilization_across_a_soil_moisture_availability_gradient
+LongleafPine	1    N      4000  7000   3   0.423    2       N      0.28	0.2	0.27	0.35	50	50	663	170	100	200	 21000 <<Longleaf grows more slowly than Lob or short pine https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs203/gtr_srs203-082.pdf
+ShortPine	1    N      2660  5076   -1   0.423    3       N       0.28	0.2	0.27	0.35	50	50	663	170	100	200	 21000 
+WhiteOak	1    N      1200  5537   -14   0.330   1       N      0.18	0.255	0.272	0.25	20	45	301	90	50	380	 37000 
+TurkeyOak       1    N      4000  7000   1   0.423    1       N       0.18	0.255	0.272	0.25	20	45	301	90	50	225	 26000 
+SweetGum        2    N      2660  5993   -1   0.300   1       N       0.17	0.255	0.21	0.25	20	45	294	90	45	250	 38000 
+RedMaple	2    N      1260  6600   -18  0.23    1       N       0.18	0.255	0.21	0.25	20	45	565	90	45	450	 31000 
+TulipTree  	2    N      2300  5993   -2  0.16     1       N      0.17	0.255	0.2	0.25	20	45	294	90	45	225	 40000 
 
 FunctionalGroupParameters
 >>Functional 	functional 	PPDF1	PPDF2	PPDF3	PPDF4	FCFRAC	BTOLAI	KLAI	MAXLAI	PPRPTS2	PPRPTS3	Wood	Monthly		AGE_Mort	leaf_drop     CRootFrac FRootFRac   Notes	
-Pine	        1            28.0    45.0    4.5     4.5     0.37    -0.8  750.0    10.0     1.0     0.8     0.6     0.003       15          10            0.23      0.2
-Hardwood        2            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
-VirgPine        3            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
-TurkeyOak       4            27.0    45.0    3.0     3.5     0.5     -0.8  2200.0   20.0    1.0     0.8     0.6     0.003       15	        10            0.35      0.3
+DroughtTolerant	        1            28.0    45.0    3.0     2.0     0.37    -0.9  100    10.0     1.0     0.8     0.5     0.003       15          9            0.23      0.2  <<750 KLAI too slow. 500 too low.
+DroughtSensitive        2            28.0    44.0    2.0     2.0     0.5     -0.9  1200   20.0    1.1     0.9     0.7     0.003       15	        9            0.35      0.3
 
 FireReductionParameters
 >> Based on Stacy Drury's lit review/analysis. See 'Fuel consumption based on fire severity class.docx'
