@@ -1,0 +1,10 @@
+Time, Species, ClimateRegion, NumberSitesChecked, AvgTempMult, AvgMinJanTempMult, AvgSoilMoistureMult, AvgProbEst
+1, LobPine, FortBragg, 7930,0.947,0.000,0.689,0.000
+1, LongleafPine, FortBragg, 7904,0.309,1.000,0.694,0.000
+1, ShortPine, FortBragg, 7901,0.898,1.000,0.694,0.000
+1, SlashPine, FortBragg, 7917,0.947,0.000,0.690,0.000
+1, WhiteOak, FortBragg, 5983,0.834,1.000,0.713,0.000
+1, TurkeyOak, FortBragg, 7902,0.309,1.000,0.694,0.000
+1, SweetGum, FortBragg, 7906,0.998,1.000,0.686,0.000
+1, RedMaple, FortBragg, 12306,0.985,1.000,0.728,0.000
+1, TulipTree, FortBragg, 7901,0.997,1.000,0.671,0.000

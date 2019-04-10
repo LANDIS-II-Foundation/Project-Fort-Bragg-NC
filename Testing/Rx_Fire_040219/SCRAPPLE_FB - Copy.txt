@@ -1,0 +1,211 @@
+>>Testing Fort Bragg
+LandisData  "SCRAPPLE"
+
+Timestep                            1
+
+AccidentalIgnitionsMap     RX_Ignitions.tif
+LightningIgnitionsMap  RX_Ignitions.tif
+RxIgnitionsMap  RX_Ignitions.tif << Entire area of RX burns is 1, unburned areas are 0 
+
+DynamicRxIgnitionMaps << Optional
+1	RX_Year_1.tif << Generated from new fire zones at Fort Bragg
+2	RX_Year_2.tif << Generated from new fire zones at Fort Bragg
+3	RX_Year_3.tif << Generated from new fire zones at Fort Bragg
+4	RX_Year_4.tif << Generated from new fire zones at Fort Bragg
+5	RX_Year_5.tif << Generated from new fire zones at Fort Bragg
+6	RX_Year_6.tif << Generated from new fire zones at Fort Bragg
+7	RX_Year_1.tif << Repeats every six years
+8	RX_Year_2.tif
+9	RX_Year_3.tif
+10	RX_Year_4.tif
+11	RX_Year_5.tif
+12	RX_Year_6.tif
+13	RX_Year_1.tif
+14	RX_Year_2.tif
+15	RX_Year_3.tif
+16	RX_Year_4.tif
+17	RX_Year_5.tif
+18	RX_Year_6.tif
+19	RX_Year_1.tif
+20	RX_Year_2.tif
+21	RX_Year_3.tif
+22	RX_Year_4.tif
+23	RX_Year_5.tif
+24	RX_Year_6.tif
+25	RX_Year_1.tif
+26	RX_Year_2.tif
+27	RX_Year_3.tif
+28	RX_Year_4.tif
+29	RX_Year_5.tif
+30	RX_Year_6.tif
+31	RX_Year_1.tif
+32	RX_Year_2.tif
+33	RX_Year_3.tif
+34	RX_Year_4.tif
+35	RX_Year_5.tif
+36	RX_Year_6.tif
+37	RX_Year_1.tif
+38	RX_Year_2.tif
+39	RX_Year_3.tif
+40	RX_Year_4.tif
+41	RX_Year_5.tif
+42	RX_Year_6.tif
+43	RX_Year_1.tif
+44	RX_Year_2.tif
+45	RX_Year_3.tif
+46	RX_Year_4.tif
+47	RX_Year_5.tif
+48	RX_Year_6.tif
+49	RX_Year_1.tif
+50	RX_Year_2.tif
+
+AccidentalSuppressionMap	RX_Suppression.tif  << all Zero values no suppresion as per conversation with Rob
+LightningSuppressionMap		RX_Suppression.tif << all Zero values no suppresion as per conversation with Rob
+RxSuppressionMap		RX_Suppression.tif << all Zero values no suppresion as per conversation with Rob
+
+GroundSlopeMap 		Slope_Fort_Bragg.tif  << Fort Bragg map
+UphillSlopeAzimuthMap  	Uphill_Aspect_Fort_Bragg_2.tif << Fort Bragg map
+
+>>Updated on 2/20 w new fits params
+LightningIgnitionsB0   0 << No Lightning
+LightningIgnitionsB1   0 << No Lightning
+AccidentalIgnitionsB0  0 << No Accidental
+AccidentalIgnitionsB1  0 << No Accidental
+
+>> A generic parameter
+>> Developed from running sim sith no fire and analyzing patterns
+MaximumFineFuels 200.00 <<Was 500  << Tahoe run number
+
+>> Prescribed Fire Parameters
+MaximumRxWindSpeed 12.0 << Tahoe run number
+MaximumRxFireWeatherIndex 25.0 << To discuss on 4-3-19 << Tahoe run number
+MinimumRxFireWeatherIndex 0.0 << << Tahoe run number << version 3 climate has very low values
+MaximumRxFireIntensity 3 << Tahoe run number << Upped to 3
+NumberRxAnnualFires 450 << Taken from RX_Year_1 number of RX shapes 463 for Fort Bragg
+FirstDayRxFires 60 << March 1  << To discuss on 4-3-19 
+TargetRxSize 100 << based on polygon size based on size of RX plots Fort Bragg
+
+<<RxZonesMap (Optional)
+RxZonesMap	FireZoneMap_FortBragg.tif << Fort Bragg map
+
+>>These are all based on a simple glm, unless we can find a better method I guess (11/15)
+>> 1/17/2018 With suppression tables on all 5, 65, 95 we get pretty good results from 80, -3, -2.5. The FRP is good but there are too many little fires
+MaximumSpreadAreaB0	-80.2 <<7/31 replicates on Box were run with -80 << Tahoe run number
+MaximumSpreadAreaB1	3 <<-3 <<FWI << Tahoe run number
+MaximumSpreadAreaB2	2.5 <<-2.5  <<effective wind speed << Tahoe run number
+
+>>Fitted params on 12/27 using optim() BFGS method : -1.79, 0.06, -.915, 0.0126
+>>Fitted params on 12/28 using optim() SANN method: 0.33980600,  0.01726217, -0.31600116,  0.03447919
+SpreadProbabilityB0 -38.2 <<more negative means lower spread. 7/31 replicates on Box were run with -38 << Tahoe run number
+SpreadProbabilityB1 0.575  <<FWI << Tahoe run number
+SpreadProbabilityB2  0.915 << relativized fine fuels. Was .915 << Tahoe run number
+SpreadProbabilityB3 0.0126 << effective wind speed. << Tahoe run number
+
+IntensityFactor:FineFuelPercent  0.3 <<Was 0.1 << Tahoe run number
+IntensityFactor:LadderFuelMaxAge 40 << Tahoe run number
+IntensityFactor:LadderFuelBiomass 1500 <<was 1200 << Tahoe run number
+
+LadderFuelSpeciesList 
+SweetGum << Arbitrary species from FB
+
+SuppressionMaxWindSpeed 40 << Tahoe run number
+SuppressionTable  << 1/19/18 This still needs some work to finalize these numbers since we didn't get them from the sub-committee
+>>Type		FWI1	FWI2	Lo	Md	High-Effectiveness
+Accidental	40 		60		0	5	10 << Tahoe run number	<< Used to be 5 65 95. FWI cutoffs used to be 30 and 50
+Lightning	40 		60		0	5	10 << Tahoe run number
+Rx 			40 		60  	0	5	10 << Tahoe run number << Not documented table
+
+DeadWoodTable 
+LobPine	  	22 << Tahoe run number with Arbitrary species from FB
+LongleafPine	22 << Tahoe run number with Arbitrary species from FB
+ShortPine	33 << Tahoe run number with Arbitrary species from FB
+WhiteOak	38 << Tahoe run number with Arbitrary species from FB
+TurkeyOak       27 << Tahoe run number with Arbitrary species from FB
+SweetGum        28 << Tahoe run number with Arbitrary species from FB
+RedMaple	29 << Tahoe run number with Arbitrary species from FB
+TulipTree  	28 << Tahoe run number with Arbitrary species from FB
+
+
+>> Mortality data is compiled from Brian Garrett and Brandon Collins 12/7/2017
+>> There could also be a high age cohort with slightly elevated mortality levels per Brian
+
+FireIntensityClass_1_DamageTable
+>> Format = species [maxAge Pmortality] ... [repeating]  Any missing data is 0.0
+LobPine 0   40   0.45  << Tahoe run number with Arbitrary species from FB for all FireIntensityClass_1_DamageTable
+LobPine 40  80   0.1
+LobPine 80  300 0.05
+LongleafPine 0   40   0.45
+LongleafPine 40  80   0.1
+LongleafPine 80  400  0.05
+ShortPine 0   40   0.5
+ShortPine 40  80   0.15
+ShortPine 80  200  0.1
+WhiteOak 0   40   0.6
+WhiteOak 40  80   0.15
+WhiteOak 80  300  0.05
+TurkeyOak 0   40   0.6
+TurkeyOak 40  80   0.15
+TurkeyOak 80  200  0.05
+SweetGum 0   30   0.6
+SweetGum 30  70   0.35
+SweetGum 70  300  0.25
+RedMaple 0   40   0.55
+RedMaple 40  80   0.15
+RedMaple 80  150  0.1
+TulipTree 0   30   0.6
+TulipTree 30  70   0.2
+TulipTree 70  250  0.1
+
+FireIntensityClass_2_DamageTable
+>> Format = species [maxAge Pmortality] ... [repeating]  Any missing data is 0.0
+LobPine 0   40    0.6   << Tahoe run number with Arbitrary species from FB for all FireIntensityClass_2_DamageTable
+LobPine 40  80    0.25
+LobPine 80  300   0.15
+LongleafPine 0   40    0.7
+LongleafPine 40  80    0.2
+LongleafPine 80  400   0.1
+ShortPine 0   40    0.75
+ShortPine 40  80    0.2
+ShortPine 80  200   0.1
+WhiteOak 0   40    0.8
+WhiteOak 40  80    0.4
+WhiteOak 80  300   0.2
+TurkeyOak 0   40    0.8
+TurkeyOak 40  80    0.25
+TurkeyOak 80  200   0.1
+SweetGum 0   30    0.85
+SweetGum 30  70    0.7
+SweetGum 70  300   0.6
+RedMaple 0   40    0.77
+RedMaple 40  80    0.3
+RedMaple 80  150   0.25
+TulipTree 0   30    0.8
+TulipTree 30  70    0.5
+TulipTree 70  250   0.3
+
+FireIntensityClass_3_DamageTable
+>> Format = species [maxAge Pmortality] ... [repeating]  Any missing data is 0.0
+LobPine 0   40   0.9   << Tahoe run number with Arbitrary species from FB for all FireIntensityClass_3_DamageTable
+LobPine 40  80   0.8
+LobPine 80  300  0.7
+LongleafPine 0   40   0.9
+LongleafPine 40  80   0.8
+LongleafPine 80  400  0.6
+ShortPine 0   40   0.9
+ShortPine 40  80   0.7
+ShortPine 80  200  0.5
+WhiteOak 0   40   0.99
+WhiteOak 40  80   0.75
+WhiteOak 80  300  0.8
+TurkeyOak 0   40   0.99
+TurkeyOak 40  80   0.75
+TurkeyOak 80  200  0.8
+SweetGum 0   30   0.99
+SweetGum 30  70   0.95
+SweetGum 70  300  0.9
+RedMaple 0   40   0.9
+RedMaple 40  80   0.75
+RedMaple 80  150  0.6
+TulipTree 0   30   0.9
+TulipTree 30  70   0.75
+TulipTree 70  250  0.6

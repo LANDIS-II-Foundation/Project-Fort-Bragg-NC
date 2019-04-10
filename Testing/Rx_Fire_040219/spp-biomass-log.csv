@@ -1,0 +1,5 @@
+Time,EcoName,NumActiveSites,AboveGroundBiomass_LobPine,AboveGroundBiomass_LongleafPine,AboveGroundBiomass_ShortPine,AboveGroundBiomass_SlashPine,AboveGroundBiomass_WhiteOak,AboveGroundBiomass_TurkeyOak,AboveGroundBiomass_SweetGum,AboveGroundBiomass_RedMaple,AboveGroundBiomass_TulipTree,
+0, Outside, 0, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 
+0, FortBragg, 51637, 1367.91085849294, 3864.4965431764, 24.4789007881945, 367.319422119798, 55.1489823188799, 16.5032050661347, 97.0594534926506, 91.5748591126518, 67.7643937486686, 
+1, Outside, 0, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, 
+1, FortBragg, 51637, 1355.93092162597, 3839.72362840599, 23.0729128338207, 363.685090148537, 55.1017681120127, 15.350039700215, 94.4653446172318, 91.3742277824041, 66.4162131804714, 
