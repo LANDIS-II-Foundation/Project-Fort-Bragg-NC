@@ -86,7 +86,7 @@ FirstDayRxFires 60 << March 1  << To discuss on 4-3-19
 TargetRxSize 100 << based on polygon size based on size of RX plots Fort Bragg
 
 <<RxZonesMap (Optional)
-RxZonesMap	Test_Zone.tif << Fort Bragg map
+RxZonesMap	Another_Zones_4.tif <<Test_Zone.tif << Fort Bragg map
 
 >>These are all based on a simple glm, unless we can find a better method I guess (11/15)
 >> 1/17/2018 With suppression tables on all 5, 65, 95 we get pretty good results from 80, -3, -2.5. The FRP is good but there are too many little fires
