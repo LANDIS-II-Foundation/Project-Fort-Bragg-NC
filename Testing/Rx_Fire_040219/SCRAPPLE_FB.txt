@@ -88,18 +88,14 @@ TargetRxSize 100 << based on polygon size based on size of RX plots Fort Bragg
 <<RxZonesMap (Optional)
 RxZonesMap	Another_Zones_4.tif <<Test_Zone.tif << Fort Bragg map
 
->>These are all based on a simple glm, unless we can find a better method I guess (11/15)
->> 1/17/2018 With suppression tables on all 5, 65, 95 we get pretty good results from 80, -3, -2.5. The FRP is good but there are too many little fires
-MaximumSpreadAreaB0	-80.2 <<7/31 replicates on Box were run with -80 << Tahoe run number
-MaximumSpreadAreaB1	3 <<-3 <<FWI << Tahoe run number
-MaximumSpreadAreaB2	2.5 <<-2.5  <<effective wind speed << Tahoe run number
+MaximumSpreadAreaB0	0.0 << Values not used if Rx only
+MaximumSpreadAreaB1	0.0 << Values not used if Rx only
+MaximumSpreadAreaB2	0.0 << Values not used if Rx only
 
->>Fitted params on 12/27 using optim() BFGS method : -1.79, 0.06, -.915, 0.0126
->>Fitted params on 12/28 using optim() SANN method: 0.33980600,  0.01726217, -0.31600116,  0.03447919
-SpreadProbabilityB0 -38.2 <<more negative means lower spread. 7/31 replicates on Box were run with -38 << Tahoe run number
-SpreadProbabilityB1 0.575  <<FWI << Tahoe run number
-SpreadProbabilityB2  0.915 << relativized fine fuels. Was .915 << Tahoe run number
-SpreadProbabilityB3 0.0126 << effective wind speed. << Tahoe run number
+SpreadProbabilityB0 -38.2 <<more negative means lower spread. 
+SpreadProbabilityB1 0.0  <<FWI 
+SpreadProbabilityB2  0.0 << relativized fine fuels. 
+SpreadProbabilityB3 1.0 << effective wind speed. 
 
 IntensityFactor:FineFuelPercent  0.3 <<Was 0.1 << Tahoe run number
 IntensityFactor:LadderFuelMaxAge 40 << Tahoe run number
