@@ -1,0 +1,5 @@
+LandisData "PnET-Succession"
+PnET-Succession  	Value Timestep 1 StartYear 2010 SeedingAlgorithm  WardSeedDispersal Latitude  35.1 PNEToutputsites "Outputsites_PNET.txt" InitialCommunities     "initial_community.txt"  
+InitialCommunitiesMap   "four_cell9to9.img" <<"ft_bragg_IC2_20_2019.tif" <<ft_bragg_IC2_6_2019.tif"  
+>>"ICMap_FortBragg.tif"PnETSpeciesParameters  "PNET_SpeciesParameters.txt"  EcoregionParameters  "EcoregionParameters_PnET_STATIC_CLIMATE.txt" DisturbanceReductions   "DisturbanceReductions.txt" PnETGenericParameters "Gereric_parameters_FortBragg.txt" 
+ClimateConfigFile	climate-generator-baseline.txt

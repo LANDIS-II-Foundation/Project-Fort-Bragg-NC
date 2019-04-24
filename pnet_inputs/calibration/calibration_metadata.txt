@@ -1,0 +1,39 @@
+output1_cohort
+1 cohort only age 1 to start.
+
+output_2
+1 cohort age 1, 2nd aged 2.
+#stick with 2 cohorts.
+maintresp=.001
+
+output_3
+maintresp=.002 (down from .001)
+
+output_4
+loblolly_ folN from .78 to 1
+
+output_5
+loblolly folN up to 1.5
+set seed to reduce variability.
+
+output_6
+imax from 5 to 10 to see if I can keep more cohorts alive.
+
+output_7
+Loblolly folN from 1.5 to 2.
+
+output_8
+WhiteOak drop folN from 2.4 to 2.
+
+output_9
+
+sweetgum folN from 1.6 to 2.0
+
+output_10 run with climate library.  Hardly any biomass reported and precip seems wrong
+output_11 run with climate library, multiplied precip X10 in fortbragg_new_climate4-22-2019.csv
+output_13 run with climate library, multiplied precip X100 in fortbragg_new_climate4-22-2019.csv
+output_14 run with climate library, fortbragg_new_climate3-13-2019.csv with random years and random years.  This worked.
+output_15 run with climate library, fortbragg_new_climate3-13-2019.csv with sequence years and sequence years.  This worked.
+output16 slashpine increase folN from .78 to 1.2; turkeyoak increase folN from 1.3 to 1.8
+output17 turkeyoak increase folN from 1.8 to 2.1; tuliptree folN from 2.9 to 2.4; 
+output18 loblolly folN decrease from 2.0 to 1.9.

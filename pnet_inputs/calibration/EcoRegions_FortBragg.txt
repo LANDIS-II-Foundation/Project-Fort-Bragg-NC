@@ -1,0 +1,9 @@
+LandisData  Ecoregions
+
+>>         Map
+>> Active  Code  Name   Description
+>> ------  ----  -----  -----------
+	
+	yes 1 	SALO1        "Sandy Loam"
+       
+	

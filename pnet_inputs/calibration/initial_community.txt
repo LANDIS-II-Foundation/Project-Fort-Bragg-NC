@@ -1,0 +1,25 @@
+LandisData   "Initial Communities"
+>>The following code works in search and replace to search for numbers in parantheses ([\(])([0-9]*)([\)]) , have to use regular expressions checked.
+
+
+
+
+MapCode 0
+MapCode 1
+LobPine	1  2 
+MapCode 2
+LongleafPine 1  2
+MapCode 3
+ShortPine 1  2
+MapCode 4
+SlashPine 1 2 
+MapCode 5
+WhiteOak 1 2
+MapCode 6
+TurkeyOak 1 2
+MapCode 7
+SweetGum 1  2
+MapCode 8
+RedMaple 1 2
+MapCode 9
+TulipTree 1 2
