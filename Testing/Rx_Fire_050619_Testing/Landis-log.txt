@@ -1,0 +1,360 @@
+2019-06-04 14:46:26,981 - LANDIS-II 7.0 (7)
+2019-06-04 14:46:26,987 - 
+2019-06-04 14:46:27,043 - Loading scenario from file "scenario_FB.txt" ...
+2019-06-04 14:46:27,088 - Initialized random number generator with seed = 895,478,615
+2019-06-04 14:46:27,088 - Loading species data from file "species_DoD.txt" ...
+2019-06-04 14:46:27,103 - Loading ecoregions from file "./ClimateRegions_FortBragg.txt" ...
+2019-06-04 14:46:27,115 - Initializing landscape from ecoregions map "./ClimateMap_FortBragg.tif" ...
+2019-06-04 14:46:27,127 - Cell length = 100 m, cell area = 1 ha
+2019-06-04 14:46:27,128 - Map dimensions: 265 rows by 436 columns = 115,540 cells
+2019-06-04 14:46:27,139 - Sites: 53,823 active (46.6%), 61,717 inactive (53.4%)
+2019-06-04 14:46:27,157 - Loading NECN Succession extension ...
+2019-06-04 14:46:27,188 -    Registering Data:  Succession.LeafBiomassCohorts.
+2019-06-04 14:46:27,188 -    Registering Data:  Succession.AgeCohorts.
+2019-06-04 14:46:27,188 -    Registering Data:  Succession.BiomassCohorts.
+2019-06-04 14:46:27,188 -    Registering Data:  Succession.FineFuels.
+2019-06-04 14:46:27,189 -    Registering Data:  Succession.SmolderConsumption.
+2019-06-04 14:46:27,189 -    Registering Data:  Succession.FlamingConsumption.
+2019-06-04 14:46:27,189 -    Registering Data:  Succession.CWD.
+2019-06-04 14:46:27,424 -    Begin parsing FUNCTIONAL GROUP table.
+2019-06-04 14:46:27,425 -    Begin reading FIRE REDUCTION parameters.
+2019-06-04 14:46:27,425 -    Begin reading HARVEST REDUCTION parameters.
+2019-06-04 14:46:27,431 - Initializing NECN Succession ...
+2019-06-04 14:46:27,473 -   Read in data from ./Depth_FortBragg.tif
+2019-06-04 14:46:27,494 -   Read in data from ./Drainage_FortBragg.tif
+2019-06-04 14:46:27,512 -   Read in data from ./StormFlow_FortBragg.tif
+2019-06-04 14:46:27,530 -   Read in data from ./StormFlow_FortBragg.tif
+2019-06-04 14:46:27,543 -   Read in data from ./FieldCapacity_FortBragg_final.tif
+2019-06-04 14:46:27,562 -   Read in data from ./WiltPoint_FortBragg_final.tif
+2019-06-04 14:46:27,581 -   Read in data from ./Sand_FortBragg.tif
+2019-06-04 14:46:27,602 -   Read in data from ./Clay_FortBragg.tif
+2019-06-04 14:46:27,622 -   Read in data from ./SOM1surfC_FortBragg.tif
+2019-06-04 14:46:27,644 -   Read in data from ./SOM1surfN_FortBragg.tif
+2019-06-04 14:46:27,666 -   Read in data from ./SOM1soilC_FortBragg.tif
+2019-06-04 14:46:27,688 -   Read in data from ./SOM1soilN_FortBragg.tif
+2019-06-04 14:46:27,709 -   Read in data from ./SOM2C_FortBragg.tif
+2019-06-04 14:46:27,731 -   Read in data from ./SOM2N_FortBragg.tif
+2019-06-04 14:46:27,753 -   Read in data from ./SOM3C_FortBragg.tif
+2019-06-04 14:46:27,774 -   Read in data from ./SOM3N_FortBragg.tif
+2019-06-04 14:46:27,797 -   Read in data from ./CWD_FortBragg.tif
+2019-06-04 14:46:27,834 -   Read in data from ./CWD_FortBragg.tif
+2019-06-04 14:46:27,872 -    Loading weather data ...
+2019-06-04 14:46:44,937 -    Registering Data:  TimeOfLastSuccession.
+2019-06-04 14:46:44,939 -    Registering Data:  Shade.
+2019-06-04 14:46:44,940 -    Creating Dispersal Neighborhood List.
+2019-06-04 14:46:44,940 -    Dispersal:  NeighborRadius=3050, CellLength=100, numCellRadius=30
+2019-06-04 14:46:44,976 -    Loading initial communities from file "./Ft.Bragg_IC_File.txt" ...
+2019-06-04 14:46:45,078 -    Reading initial communities map "./IC_Map_FortBragg.tif" ...
+2019-06-04 14:46:45,788 -    Opening a NECN log file "NECN-prob-establish-log.csv" ...
+2019-06-04 14:46:46,275 - Loading Biomass Harvest Biomass Rank extension ...
+2019-06-04 14:46:46,292 -    Registering Data:  Harvest.PrescriptionName.
+2019-06-04 14:46:46,292 -    Registering Data:  Harvest.TimeOfLastEvent.
+2019-06-04 14:46:46,293 -    Registering Data:  Harvest.CohortsDamaged.
+2019-06-04 14:46:46,329 - Loading SCRAPPLE extension ...
+2019-06-04 14:46:46,335 -    Registering Data:  Fire.Severity.
+2019-06-04 14:46:46,336 -    Registering Data:  Fire.TimeOfLastEvent.
+2019-06-04 14:46:46,344 -    Reading in Slope_Fort_Bragg.tif
+2019-06-04 14:46:46,359 -    Reading in Uphill_Aspect_Fort_Bragg_2.tif
+2019-06-04 14:46:46,375 -    Loading Dead Wood table...
+2019-06-04 14:46:46,376 -    Loading Fire mortality tables...
+2019-06-04 14:46:46,383 -    Generating event table...
+2019-06-04 14:46:46,383 -    Generating summary table...
+2019-06-04 14:46:46,393 -    Registering Data:  Harvest.CapacityReduction.
+2019-06-04 14:46:46,393 -    Reading management-area map Management_Map_RC.tif ...
+2019-06-04 14:46:46,411 -    Inactive management areas: 0
+2019-06-04 14:46:46,412 -    Reading stand map Stands_Harvest.tif ...
+2019-06-04 14:46:46,493 - Initializing SCRAPPLE Fire...
+2019-06-04 14:46:46,494 -    Reading in data from RX_Suppression.tif
+2019-06-04 14:46:46,507 -    Reading in data from RX_Ignitions_New.tif
+2019-06-04 14:46:46,520 -    Reading in data from RX_Suppression.tif
+2019-06-04 14:46:46,532 -    Reading in data from RX_Suppression.tif
+2019-06-04 14:46:46,544 -    Reading in data from RX_Suppression.tif
+2019-06-04 14:46:46,555 -    Reading in data from RX_Suppression.tif
+2019-06-04 14:46:46,568 -    Reading in data from FireZoneMap_FortBragg.tif
+2019-06-04 14:46:46,600 - Loading Output Biomass Reclass extension ...
+2019-06-04 14:46:46,612 - Loading Output Biomass extension ...
+2019-06-04 14:46:46,629 -    Generating summary table...
+2019-06-04 14:46:46,636 - Using the following extensions ...
+   Extension Name            Extension Filename       
+   --------------            ------------------       
+   NECN Succession           NECNSuccession_FortBragg_v3.txt
+   Biomass Harvest Biomass Rank FB_Harvest_BAU_042519.txt
+   SCRAPPLE                  SCRAPPLE_FB_IntensityClass.txt
+   Output Biomass Reclass    output-biomass-reclass.txt
+   Output Biomass            output-biomass.txt       
+
+2019-06-04 14:46:46,636 - Running Output Biomass Reclass ...
+2019-06-04 14:46:46,637 -    Writing Biomass Reclass map to output-biomass-reclass/bio-reclass1-0.img ...
+2019-06-04 14:46:46,816 - Running Output Biomass ...
+2019-06-04 14:46:46,818 -    Writing total biomass map to biomass/TotalBiomass-0.img ...
+2019-06-04 14:46:47,013 -    Writing LobPine biomass map to biomass/LobPine-0.img ...
+2019-06-04 14:46:47,073 -    Writing LongleafPine biomass map to biomass/LongleafPine-0.img ...
+2019-06-04 14:46:47,133 -    Writing ShortPine biomass map to biomass/ShortPine-0.img ...
+2019-06-04 14:46:47,186 -    Writing SlashPine biomass map to biomass/SlashPine-0.img ...
+2019-06-04 14:46:47,239 -    Writing WhiteOak biomass map to biomass/WhiteOak-0.img ...
+2019-06-04 14:46:47,293 -    Writing TurkeyOak biomass map to biomass/TurkeyOak-0.img ...
+2019-06-04 14:46:47,349 -    Writing SweetGum biomass map to biomass/SweetGum-0.img ...
+2019-06-04 14:46:47,410 -    Writing RedMaple biomass map to biomass/RedMaple-0.img ...
+2019-06-04 14:46:47,479 -    Writing TulipTree biomass map to biomass/TulipTree-0.img ...
+2019-06-04 14:46:47,534 - Current time: 1
+2019-06-04 14:46:47,535 - Running Biomass Harvest ...
+2019-06-04 14:46:47,877 -   Landis.Library.Succession.Planting+SpeciesList (99, 224)
+2019-06-04 14:46:47,878 -   Landis.Library.Succession.Planting+SpeciesList (100, 224)
+2019-06-04 14:46:47,879 -   Landis.Library.Succession.Planting+SpeciesList (100, 225)
+2019-06-04 14:46:47,879 -   Landis.Library.Succession.Planting+SpeciesList (101, 224)
+2019-06-04 14:46:47,879 -   Landis.Library.Succession.Planting+SpeciesList (101, 225)
+2019-06-04 14:46:47,880 -   Landis.Library.Succession.Planting+SpeciesList (102, 224)
+2019-06-04 14:46:47,880 -   Landis.Library.Succession.Planting+SpeciesList (103, 224)
+2019-06-04 14:46:47,881 -   Landis.Library.Succession.Planting+SpeciesList (105, 222)
+2019-06-04 14:46:47,881 -   Landis.Library.Succession.Planting+SpeciesList (108, 224)
+2019-06-04 14:46:47,881 -   Landis.Library.Succession.Planting+SpeciesList (109, 224)
+2019-06-04 14:46:47,882 -   Landis.Library.Succession.Planting+SpeciesList (110, 224)
+2019-06-04 14:46:47,888 -   Landis.Library.Succession.Planting+SpeciesList (105, 260)
+2019-06-04 14:46:47,889 -   Landis.Library.Succession.Planting+SpeciesList (105, 261)
+2019-06-04 14:46:47,889 -   Landis.Library.Succession.Planting+SpeciesList (105, 262)
+2019-06-04 14:46:47,889 -   Landis.Library.Succession.Planting+SpeciesList (105, 263)
+2019-06-04 14:46:47,890 -   Landis.Library.Succession.Planting+SpeciesList (105, 264)
+2019-06-04 14:46:47,891 -   Landis.Library.Succession.Planting+SpeciesList (105, 265)
+2019-06-04 14:46:47,892 -   Landis.Library.Succession.Planting+SpeciesList (106, 259)
+2019-06-04 14:46:47,892 -   Landis.Library.Succession.Planting+SpeciesList (106, 260)
+2019-06-04 14:46:47,893 -   Landis.Library.Succession.Planting+SpeciesList (106, 261)
+2019-06-04 14:46:47,893 -   Landis.Library.Succession.Planting+SpeciesList (106, 262)
+2019-06-04 14:46:47,894 -   Landis.Library.Succession.Planting+SpeciesList (106, 263)
+2019-06-04 14:46:47,894 -   Landis.Library.Succession.Planting+SpeciesList (106, 264)
+2019-06-04 14:46:47,894 -   Landis.Library.Succession.Planting+SpeciesList (106, 265)
+2019-06-04 14:46:47,895 -   Landis.Library.Succession.Planting+SpeciesList (106, 266)
+2019-06-04 14:46:47,895 -   Landis.Library.Succession.Planting+SpeciesList (106, 267)
+2019-06-04 14:46:47,895 -   Landis.Library.Succession.Planting+SpeciesList (106, 268)
+2019-06-04 14:46:47,896 -   Landis.Library.Succession.Planting+SpeciesList (106, 269)
+2019-06-04 14:46:47,896 -   Landis.Library.Succession.Planting+SpeciesList (107, 261)
+2019-06-04 14:46:47,896 -   Landis.Library.Succession.Planting+SpeciesList (107, 262)
+2019-06-04 14:46:47,897 -   Landis.Library.Succession.Planting+SpeciesList (107, 263)
+2019-06-04 14:46:47,897 -   Landis.Library.Succession.Planting+SpeciesList (107, 264)
+2019-06-04 14:46:47,897 -   Landis.Library.Succession.Planting+SpeciesList (107, 265)
+2019-06-04 14:46:47,898 -   Landis.Library.Succession.Planting+SpeciesList (107, 266)
+2019-06-04 14:46:47,898 -   Landis.Library.Succession.Planting+SpeciesList (108, 264)
+2019-06-04 14:46:47,898 -   Landis.Library.Succession.Planting+SpeciesList (108, 265)
+2019-06-04 14:46:47,899 -   Landis.Library.Succession.Planting+SpeciesList (109, 266)
+2019-06-04 14:46:47,904 -   Landis.Library.Succession.Planting+SpeciesList (92, 251)
+2019-06-04 14:46:47,904 -   Landis.Library.Succession.Planting+SpeciesList (93, 251)
+2019-06-04 14:46:47,905 -   Landis.Library.Succession.Planting+SpeciesList (94, 251)
+2019-06-04 14:46:47,905 -   Landis.Library.Succession.Planting+SpeciesList (94, 252)
+2019-06-04 14:46:47,905 -   Landis.Library.Succession.Planting+SpeciesList (95, 249)
+2019-06-04 14:46:47,906 -   Landis.Library.Succession.Planting+SpeciesList (95, 250)
+2019-06-04 14:46:47,906 -   Landis.Library.Succession.Planting+SpeciesList (95, 251)
+2019-06-04 14:46:47,906 -   Landis.Library.Succession.Planting+SpeciesList (95, 252)
+2019-06-04 14:46:47,907 -   Landis.Library.Succession.Planting+SpeciesList (96, 249)
+2019-06-04 14:46:47,907 -   Landis.Library.Succession.Planting+SpeciesList (96, 250)
+2019-06-04 14:46:47,907 -   Landis.Library.Succession.Planting+SpeciesList (96, 251)
+2019-06-04 14:46:47,908 -   Landis.Library.Succession.Planting+SpeciesList (96, 252)
+2019-06-04 14:46:47,908 -   Landis.Library.Succession.Planting+SpeciesList (97, 249)
+2019-06-04 14:46:47,908 -   Landis.Library.Succession.Planting+SpeciesList (97, 250)
+2019-06-04 14:46:47,909 -   Landis.Library.Succession.Planting+SpeciesList (97, 251)
+2019-06-04 14:46:47,909 -   Landis.Library.Succession.Planting+SpeciesList (97, 252)
+2019-06-04 14:46:47,909 -   Landis.Library.Succession.Planting+SpeciesList (98, 247)
+2019-06-04 14:46:47,910 -   Landis.Library.Succession.Planting+SpeciesList (98, 248)
+2019-06-04 14:46:47,910 -   Landis.Library.Succession.Planting+SpeciesList (98, 249)
+2019-06-04 14:46:47,911 -   Landis.Library.Succession.Planting+SpeciesList (98, 250)
+2019-06-04 14:46:47,911 -   Landis.Library.Succession.Planting+SpeciesList (98, 251)
+2019-06-04 14:46:47,911 -   Landis.Library.Succession.Planting+SpeciesList (98, 252)
+2019-06-04 14:46:47,912 -   Landis.Library.Succession.Planting+SpeciesList (99, 246)
+2019-06-04 14:46:47,912 -   Landis.Library.Succession.Planting+SpeciesList (99, 247)
+2019-06-04 14:46:47,912 -   Landis.Library.Succession.Planting+SpeciesList (99, 248)
+2019-06-04 14:46:47,913 -   Landis.Library.Succession.Planting+SpeciesList (99, 249)
+2019-06-04 14:46:47,913 -   Landis.Library.Succession.Planting+SpeciesList (99, 250)
+2019-06-04 14:46:47,913 -   Landis.Library.Succession.Planting+SpeciesList (99, 251)
+2019-06-04 14:46:47,914 -   Landis.Library.Succession.Planting+SpeciesList (99, 252)
+2019-06-04 14:46:47,914 -   Landis.Library.Succession.Planting+SpeciesList (100, 247)
+2019-06-04 14:46:47,914 -   Landis.Library.Succession.Planting+SpeciesList (100, 248)
+2019-06-04 14:46:47,915 -   Landis.Library.Succession.Planting+SpeciesList (100, 249)
+2019-06-04 14:46:47,915 -   Landis.Library.Succession.Planting+SpeciesList (100, 250)
+2019-06-04 14:46:47,920 -   Landis.Library.Succession.Planting+SpeciesList (100, 251)
+2019-06-04 14:46:47,920 -   Landis.Library.Succession.Planting+SpeciesList (100, 252)
+2019-06-04 14:46:47,921 -   Landis.Library.Succession.Planting+SpeciesList (101, 248)
+2019-06-04 14:46:47,921 -   Landis.Library.Succession.Planting+SpeciesList (101, 249)
+2019-06-04 14:46:47,921 -   Landis.Library.Succession.Planting+SpeciesList (101, 250)
+2019-06-04 14:46:47,922 -   Landis.Library.Succession.Planting+SpeciesList (101, 251)
+2019-06-04 14:46:47,922 -   Landis.Library.Succession.Planting+SpeciesList (101, 252)
+2019-06-04 14:46:47,922 -   Landis.Library.Succession.Planting+SpeciesList (102, 248)
+2019-06-04 14:46:47,923 -   Landis.Library.Succession.Planting+SpeciesList (102, 249)
+2019-06-04 14:46:47,923 -   Landis.Library.Succession.Planting+SpeciesList (102, 250)
+2019-06-04 14:46:47,923 -   Landis.Library.Succession.Planting+SpeciesList (102, 251)
+2019-06-04 14:46:47,924 -   Landis.Library.Succession.Planting+SpeciesList (102, 252)
+2019-06-04 14:46:47,924 -   Landis.Library.Succession.Planting+SpeciesList (103, 249)
+2019-06-04 14:46:47,925 -   Landis.Library.Succession.Planting+SpeciesList (103, 250)
+2019-06-04 14:46:47,925 -   Landis.Library.Succession.Planting+SpeciesList (103, 251)
+2019-06-04 14:46:47,927 -   Landis.Library.Succession.Planting+SpeciesList (83, 268)
+2019-06-04 14:46:47,927 -   Landis.Library.Succession.Planting+SpeciesList (83, 269)
+2019-06-04 14:46:47,928 -   Landis.Library.Succession.Planting+SpeciesList (83, 270)
+2019-06-04 14:46:47,928 -   Landis.Library.Succession.Planting+SpeciesList (83, 271)
+2019-06-04 14:46:47,928 -   Landis.Library.Succession.Planting+SpeciesList (83, 272)
+2019-06-04 14:46:47,929 -   Landis.Library.Succession.Planting+SpeciesList (84, 266)
+2019-06-04 14:46:47,929 -   Landis.Library.Succession.Planting+SpeciesList (84, 267)
+2019-06-04 14:46:47,929 -   Landis.Library.Succession.Planting+SpeciesList (84, 268)
+2019-06-04 14:46:47,930 -   Landis.Library.Succession.Planting+SpeciesList (84, 269)
+2019-06-04 14:46:47,930 -   Landis.Library.Succession.Planting+SpeciesList (84, 270)
+2019-06-04 14:46:47,930 -   Landis.Library.Succession.Planting+SpeciesList (84, 271)
+2019-06-04 14:46:47,931 -   Landis.Library.Succession.Planting+SpeciesList (85, 267)
+2019-06-04 14:46:47,936 -   Landis.Library.Succession.Planting+SpeciesList (85, 268)
+2019-06-04 14:46:47,936 -   Landis.Library.Succession.Planting+SpeciesList (85, 269)
+2019-06-04 14:46:47,937 -   Landis.Library.Succession.Planting+SpeciesList (85, 270)
+2019-06-04 14:46:47,937 -   Landis.Library.Succession.Planting+SpeciesList (85, 271)
+2019-06-04 14:46:47,938 -   Landis.Library.Succession.Planting+SpeciesList (86, 267)
+2019-06-04 14:46:47,939 -   Landis.Library.Succession.Planting+SpeciesList (86, 268)
+2019-06-04 14:46:47,939 -   Landis.Library.Succession.Planting+SpeciesList (86, 269)
+2019-06-04 14:46:47,940 -   Landis.Library.Succession.Planting+SpeciesList (86, 270)
+2019-06-04 14:46:47,940 -   Landis.Library.Succession.Planting+SpeciesList (87, 265)
+2019-06-04 14:46:47,940 -   Landis.Library.Succession.Planting+SpeciesList (87, 266)
+2019-06-04 14:46:47,941 -   Landis.Library.Succession.Planting+SpeciesList (87, 267)
+2019-06-04 14:46:47,941 -   Landis.Library.Succession.Planting+SpeciesList (87, 268)
+2019-06-04 14:46:47,941 -   Landis.Library.Succession.Planting+SpeciesList (87, 269)
+2019-06-04 14:46:47,942 -   Landis.Library.Succession.Planting+SpeciesList (88, 266)
+2019-06-04 14:46:47,942 -   Landis.Library.Succession.Planting+SpeciesList (88, 267)
+2019-06-04 14:46:47,943 -   Landis.Library.Succession.Planting+SpeciesList (88, 268)
+2019-06-04 14:46:47,943 -   Landis.Library.Succession.Planting+SpeciesList (88, 269)
+2019-06-04 14:46:47,943 -   Landis.Library.Succession.Planting+SpeciesList (89, 267)
+2019-06-04 14:46:47,944 -   Landis.Library.Succession.Planting+SpeciesList (89, 268)
+2019-06-04 14:46:47,998 -    Writing prescription map to harvest/prescripts-1.img ...
+2019-06-04 14:46:48,049 -    Writing biomass-removed map to harvest/biomass-removed-1.img ...
+2019-06-04 14:46:48,097 - Running SCRAPPLE ...
+2019-06-04 14:46:48,101 -    Reading in new Fire Regions Map RX_Year_1.tif.
+2019-06-04 14:46:48,102 -    Reading in data from RX_Year_1.tif
+2019-06-04 14:46:48,115 -    Processing landscape for Fire events ...
+2019-06-04 14:46:58,263 - Done running extension
+2019-06-04 14:46:58,264 - Running NECN Succession ...
+2019-06-04 14:47:32,395 - Running Output Biomass Reclass ...
+2019-06-04 14:47:32,396 -    Writing Biomass Reclass map to output-biomass-reclass/bio-reclass1-1.img ...
+2019-06-04 14:47:32,564 - Running Output Biomass ...
+2019-06-04 14:47:32,565 -    Writing total biomass map to biomass/TotalBiomass-1.img ...
+2019-06-04 14:47:32,735 -    Writing LobPine biomass map to biomass/LobPine-1.img ...
+2019-06-04 14:47:32,793 -    Writing LongleafPine biomass map to biomass/LongleafPine-1.img ...
+2019-06-04 14:47:32,853 -    Writing ShortPine biomass map to biomass/ShortPine-1.img ...
+2019-06-04 14:47:32,907 -    Writing SlashPine biomass map to biomass/SlashPine-1.img ...
+2019-06-04 14:47:32,960 -    Writing WhiteOak biomass map to biomass/WhiteOak-1.img ...
+2019-06-04 14:47:33,012 -    Writing TurkeyOak biomass map to biomass/TurkeyOak-1.img ...
+2019-06-04 14:47:33,065 -    Writing SweetGum biomass map to biomass/SweetGum-1.img ...
+2019-06-04 14:47:33,119 -    Writing RedMaple biomass map to biomass/RedMaple-1.img ...
+2019-06-04 14:47:33,174 -    Writing TulipTree biomass map to biomass/TulipTree-1.img ...
+2019-06-04 14:47:33,321 - Current time: 2
+2019-06-04 14:47:33,323 - Running Biomass Harvest ...
+2019-06-04 14:47:33,654 -   Landis.Library.Succession.Planting+SpeciesList (89, 225)
+2019-06-04 14:47:33,656 -   Landis.Library.Succession.Planting+SpeciesList (94, 225)
+2019-06-04 14:47:33,656 -   Landis.Library.Succession.Planting+SpeciesList (94, 226)
+2019-06-04 14:47:33,657 -   Landis.Library.Succession.Planting+SpeciesList (95, 225)
+2019-06-04 14:47:33,657 -   Landis.Library.Succession.Planting+SpeciesList (95, 226)
+2019-06-04 14:47:33,657 -   Landis.Library.Succession.Planting+SpeciesList (96, 224)
+2019-06-04 14:47:33,658 -   Landis.Library.Succession.Planting+SpeciesList (96, 225)
+2019-06-04 14:47:33,658 -   Landis.Library.Succession.Planting+SpeciesList (96, 226)
+2019-06-04 14:47:33,659 -   Landis.Library.Succession.Planting+SpeciesList (97, 224)
+2019-06-04 14:47:33,659 -   Landis.Library.Succession.Planting+SpeciesList (97, 225)
+2019-06-04 14:47:33,660 -   Landis.Library.Succession.Planting+SpeciesList (52, 267)
+2019-06-04 14:47:33,660 -   Landis.Library.Succession.Planting+SpeciesList (52, 268)
+2019-06-04 14:47:33,661 -   Landis.Library.Succession.Planting+SpeciesList (53, 267)
+2019-06-04 14:47:33,661 -   Landis.Library.Succession.Planting+SpeciesList (53, 268)
+2019-06-04 14:47:33,662 -   Landis.Library.Succession.Planting+SpeciesList (53, 269)
+2019-06-04 14:47:33,662 -   Landis.Library.Succession.Planting+SpeciesList (53, 270)
+2019-06-04 14:47:33,663 -   Landis.Library.Succession.Planting+SpeciesList (54, 267)
+2019-06-04 14:47:33,663 -   Landis.Library.Succession.Planting+SpeciesList (54, 268)
+2019-06-04 14:47:33,666 -   Landis.Library.Succession.Planting+SpeciesList (54, 269)
+2019-06-04 14:47:33,667 -   Landis.Library.Succession.Planting+SpeciesList (54, 270)
+2019-06-04 14:47:33,667 -   Landis.Library.Succession.Planting+SpeciesList (55, 267)
+2019-06-04 14:47:33,668 -   Landis.Library.Succession.Planting+SpeciesList (55, 268)
+2019-06-04 14:47:33,668 -   Landis.Library.Succession.Planting+SpeciesList (55, 269)
+2019-06-04 14:47:33,668 -   Landis.Library.Succession.Planting+SpeciesList (87, 263)
+2019-06-04 14:47:33,669 -   Landis.Library.Succession.Planting+SpeciesList (87, 264)
+2019-06-04 14:47:33,669 -   Landis.Library.Succession.Planting+SpeciesList (88, 262)
+2019-06-04 14:47:33,670 -   Landis.Library.Succession.Planting+SpeciesList (88, 263)
+2019-06-04 14:47:33,670 -   Landis.Library.Succession.Planting+SpeciesList (88, 264)
+2019-06-04 14:47:33,671 -   Landis.Library.Succession.Planting+SpeciesList (88, 265)
+2019-06-04 14:47:33,671 -   Landis.Library.Succession.Planting+SpeciesList (89, 261)
+2019-06-04 14:47:33,672 -   Landis.Library.Succession.Planting+SpeciesList (89, 262)
+2019-06-04 14:47:33,672 -   Landis.Library.Succession.Planting+SpeciesList (89, 263)
+2019-06-04 14:47:33,673 -   Landis.Library.Succession.Planting+SpeciesList (89, 264)
+2019-06-04 14:47:33,673 -   Landis.Library.Succession.Planting+SpeciesList (89, 265)
+2019-06-04 14:47:33,674 -   Landis.Library.Succession.Planting+SpeciesList (89, 266)
+2019-06-04 14:47:33,674 -   Landis.Library.Succession.Planting+SpeciesList (90, 262)
+2019-06-04 14:47:33,679 -   Landis.Library.Succession.Planting+SpeciesList (90, 263)
+2019-06-04 14:47:33,679 -   Landis.Library.Succession.Planting+SpeciesList (90, 264)
+2019-06-04 14:47:33,681 -   Landis.Library.Succession.Planting+SpeciesList (90, 265)
+2019-06-04 14:47:33,681 -   Landis.Library.Succession.Planting+SpeciesList (90, 266)
+2019-06-04 14:47:33,682 -   Landis.Library.Succession.Planting+SpeciesList (90, 267)
+2019-06-04 14:47:33,683 -   Landis.Library.Succession.Planting+SpeciesList (90, 268)
+2019-06-04 14:47:33,683 -   Landis.Library.Succession.Planting+SpeciesList (91, 266)
+2019-06-04 14:47:33,684 -   Landis.Library.Succession.Planting+SpeciesList (91, 267)
+2019-06-04 14:47:33,684 -   Landis.Library.Succession.Planting+SpeciesList (92, 267)
+2019-06-04 14:47:33,688 -   Landis.Library.Succession.Planting+SpeciesList (86, 271)
+2019-06-04 14:47:33,688 -   Landis.Library.Succession.Planting+SpeciesList (87, 270)
+2019-06-04 14:47:33,689 -   Landis.Library.Succession.Planting+SpeciesList (87, 271)
+2019-06-04 14:47:33,689 -   Landis.Library.Succession.Planting+SpeciesList (88, 270)
+2019-06-04 14:47:33,690 -   Landis.Library.Succession.Planting+SpeciesList (88, 271)
+2019-06-04 14:47:33,691 -   Landis.Library.Succession.Planting+SpeciesList (89, 269)
+2019-06-04 14:47:33,691 -   Landis.Library.Succession.Planting+SpeciesList (89, 270)
+2019-06-04 14:47:33,692 -   Landis.Library.Succession.Planting+SpeciesList (89, 271)
+2019-06-04 14:47:33,692 -   Landis.Library.Succession.Planting+SpeciesList (90, 269)
+2019-06-04 14:47:33,693 -   Landis.Library.Succession.Planting+SpeciesList (90, 270)
+2019-06-04 14:47:33,693 -   Landis.Library.Succession.Planting+SpeciesList (90, 271)
+2019-06-04 14:47:33,693 -   Landis.Library.Succession.Planting+SpeciesList (91, 268)
+2019-06-04 14:47:33,694 -   Landis.Library.Succession.Planting+SpeciesList (91, 269)
+2019-06-04 14:47:33,694 -   Landis.Library.Succession.Planting+SpeciesList (91, 270)
+2019-06-04 14:47:33,695 -   Landis.Library.Succession.Planting+SpeciesList (91, 271)
+2019-06-04 14:47:33,696 -   Landis.Library.Succession.Planting+SpeciesList (91, 272)
+2019-06-04 14:47:33,696 -   Landis.Library.Succession.Planting+SpeciesList (92, 268)
+2019-06-04 14:47:33,699 -   Landis.Library.Succession.Planting+SpeciesList (36, 263)
+2019-06-04 14:47:33,700 -   Landis.Library.Succession.Planting+SpeciesList (37, 263)
+2019-06-04 14:47:33,701 -   Landis.Library.Succession.Planting+SpeciesList (38, 263)
+2019-06-04 14:47:33,701 -   Landis.Library.Succession.Planting+SpeciesList (39, 263)
+2019-06-04 14:47:33,702 -   Landis.Library.Succession.Planting+SpeciesList (39, 264)
+2019-06-04 14:47:33,702 -   Landis.Library.Succession.Planting+SpeciesList (40, 263)
+2019-06-04 14:47:33,713 -   Landis.Library.Succession.Planting+SpeciesList (40, 264)
+2019-06-04 14:47:33,715 -   Landis.Library.Succession.Planting+SpeciesList (41, 263)
+2019-06-04 14:47:33,715 -   Landis.Library.Succession.Planting+SpeciesList (41, 264)
+2019-06-04 14:47:33,716 -   Landis.Library.Succession.Planting+SpeciesList (42, 264)
+2019-06-04 14:47:33,716 -   Landis.Library.Succession.Planting+SpeciesList (43, 265)
+2019-06-04 14:47:33,717 -   Landis.Library.Succession.Planting+SpeciesList (91, 273)
+2019-06-04 14:47:33,717 -   Landis.Library.Succession.Planting+SpeciesList (91, 274)
+2019-06-04 14:47:33,718 -   Landis.Library.Succession.Planting+SpeciesList (91, 275)
+2019-06-04 14:47:33,718 -   Landis.Library.Succession.Planting+SpeciesList (92, 273)
+2019-06-04 14:47:33,718 -   Landis.Library.Succession.Planting+SpeciesList (92, 274)
+2019-06-04 14:47:33,719 -   Landis.Library.Succession.Planting+SpeciesList (92, 275)
+2019-06-04 14:47:33,719 -   Landis.Library.Succession.Planting+SpeciesList (92, 276)
+2019-06-04 14:47:33,720 -   Landis.Library.Succession.Planting+SpeciesList (93, 273)
+2019-06-04 14:47:33,720 -   Landis.Library.Succession.Planting+SpeciesList (93, 274)
+2019-06-04 14:47:33,720 -   Landis.Library.Succession.Planting+SpeciesList (93, 275)
+2019-06-04 14:47:33,721 -   Landis.Library.Succession.Planting+SpeciesList (93, 276)
+2019-06-04 14:47:33,721 -   Landis.Library.Succession.Planting+SpeciesList (94, 274)
+2019-06-04 14:47:33,722 -   Landis.Library.Succession.Planting+SpeciesList (94, 275)
+2019-06-04 14:47:33,722 -   Landis.Library.Succession.Planting+SpeciesList (94, 276)
+2019-06-04 14:47:33,722 -   Landis.Library.Succession.Planting+SpeciesList (94, 277)
+2019-06-04 14:47:33,723 -   Landis.Library.Succession.Planting+SpeciesList (94, 278)
+2019-06-04 14:47:33,723 -   Landis.Library.Succession.Planting+SpeciesList (95, 274)
+2019-06-04 14:47:33,724 -   Landis.Library.Succession.Planting+SpeciesList (95, 275)
+2019-06-04 14:47:33,724 -   Landis.Library.Succession.Planting+SpeciesList (95, 276)
+2019-06-04 14:47:33,724 -   Landis.Library.Succession.Planting+SpeciesList (96, 275)
+2019-06-04 14:47:33,741 -   Landis.Library.Succession.Planting+SpeciesList (92, 225)
+2019-06-04 14:47:33,741 -   Landis.Library.Succession.Planting+SpeciesList (92, 228)
+2019-06-04 14:47:33,741 -   Landis.Library.Succession.Planting+SpeciesList (93, 225)
+2019-06-04 14:47:33,742 -   Landis.Library.Succession.Planting+SpeciesList (93, 227)
+2019-06-04 14:47:33,742 -   Landis.Library.Succession.Planting+SpeciesList (93, 228)
+2019-06-04 14:47:33,743 -   Landis.Library.Succession.Planting+SpeciesList (94, 227)
+2019-06-04 14:47:33,743 -   Landis.Library.Succession.Planting+SpeciesList (94, 228)
+2019-06-04 14:47:33,745 -   Landis.Library.Succession.Planting+SpeciesList (95, 227)
+2019-06-04 14:47:33,745 -   Landis.Library.Succession.Planting+SpeciesList (95, 228)
+2019-06-04 14:47:33,745 -   Landis.Library.Succession.Planting+SpeciesList (96, 227)
+2019-06-04 14:47:33,746 -   Landis.Library.Succession.Planting+SpeciesList (96, 228)
+2019-06-04 14:47:33,746 -   Landis.Library.Succession.Planting+SpeciesList (97, 226)
+2019-06-04 14:47:33,746 -   Landis.Library.Succession.Planting+SpeciesList (97, 227)
+2019-06-04 14:47:33,747 -   Landis.Library.Succession.Planting+SpeciesList (97, 228)
+2019-06-04 14:47:33,747 -   Landis.Library.Succession.Planting+SpeciesList (98, 224)
+2019-06-04 14:47:33,748 -   Landis.Library.Succession.Planting+SpeciesList (98, 225)
+2019-06-04 14:47:33,748 -   Landis.Library.Succession.Planting+SpeciesList (98, 226)
+2019-06-04 14:47:33,748 -   Landis.Library.Succession.Planting+SpeciesList (98, 227)
+2019-06-04 14:47:33,749 -   Landis.Library.Succession.Planting+SpeciesList (98, 228)
+2019-06-04 14:47:33,749 -   Landis.Library.Succession.Planting+SpeciesList (98, 229)
+2019-06-04 14:47:33,790 -    Writing prescription map to harvest/prescripts-2.img ...
+2019-06-04 14:47:33,837 -    Writing biomass-removed map to harvest/biomass-removed-2.img ...
+2019-06-04 14:47:33,884 - Running SCRAPPLE ...
+2019-06-04 14:47:33,886 -    Reading in new Fire Regions Map RX_Year_2.tif.
+2019-06-04 14:47:33,886 -    Reading in data from RX_Year_2.tif
+2019-06-04 14:47:33,900 -    Processing landscape for Fire events ...
+2019-06-04 14:47:42,073 - Done running extension
+2019-06-04 14:47:42,074 - Running NECN Succession ...
