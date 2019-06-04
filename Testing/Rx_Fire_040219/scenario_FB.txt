@@ -25,7 +25,7 @@ CellLength  100 << meters, 100 x 100 m = 1 hectare
 
 >> --------------------     -------------------
   
-"NECN Succession"    NECNSuccession_FortBragg.txt
+"NECN Succession"    NECNSuccession_FortBragg_v3.txt	<<NECNSuccession_FortBragg.txt
 
 
 
@@ -33,8 +33,9 @@ CellLength  100 << meters, 100 x 100 m = 1 hectare
 
 >> ----------------------   -------------------
 
->>"Biomass Harvest"	biomass-harvest_SetUp_s2e1.txt
-"SCRAPPLE"		SCRAPPLE_FB.txt
+"Biomass Harvest Biomass Rank"	FB_Harvest_BAU_042519.txt
+>>"Base Harvest" 	Base_Harvest.txt
+"SCRAPPLE"		SCRAPPLE_FB_IntensityClass_ML.txt	<<SCRAPPLE_FB_IntensityClass.txt <<SCRAPPLE_FB.txt  <<SCRAPPLE_FB052219.txt 		<<
 
 >>   DisturbancesRandomOrder  yes  << optional parameter; default = no
 
