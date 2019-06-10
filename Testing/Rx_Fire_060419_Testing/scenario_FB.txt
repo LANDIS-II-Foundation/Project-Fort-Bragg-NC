@@ -33,7 +33,7 @@ CellLength  100 << meters, 100 x 100 m = 1 hectare
 
 >> ----------------------   -------------------
 
-"Biomass Harvest Biomass Rank"	FB_Harvest_BAU_042519.txt
+"Biomass Harvest Biomass Rank"	FB_Harvest_BAU_042519-0522.txt  <<FB_Harvest_BAU_042519.txt
 >>"Base Harvest" 	Base_Harvest.txt
 "SCRAPPLE"		SCRAPPLE_FB053019.txt  <<SCRAPPLE_FB_IntensityClass_ML.txt	<<SCRAPPLE_FB_IntensityClass.txt <<SCRAPPLE_FB.txt  <<SCRAPPLE_FB052219.txt 		<<
 
