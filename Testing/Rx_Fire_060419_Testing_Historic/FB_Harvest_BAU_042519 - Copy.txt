@@ -1,0 +1,79 @@
+<<Prescriptions are based on CNF and may need to be renamed as we add other ownerships or management areas
+<<New Prescriptions from Eric but using Clear-cutting and not Patch-cutting for early prescriptions
+>>Same as this file. but with minor changes to RPine state.  CNF_Harvest_BAU_063015B.txt
+
+
+LandisData "Biomass Harvest"
+Timestep 1 
+
+ManagementAreas "Management_Map_RC.tif"
+Stands      "Stands_Harvest.tif"
+
+<<Prescriptions are based on CNF and may need to be renamed as we add other ownerships or management areas
+>>****************************************
+
+Prescription Thinnning_Pines
+StandRanking 	Economic  <<CUT OLDEST STANDS FIRST? USED THROUGHOUT MANY OF THE PRESCRIPTIONS.  THAT OK?
+		LobPine		100	40
+		LongleafPine	100	40
+
+MinimumAge 40
+MaximumAge 100	
+
+ForestTypeTable << spruce-fir
+>> InclusionRule ageRange percentCells species
+Optional 1-100 highest LongleafPine << either longleaf or loblolly can qualify the stand
+Optional 1-100 highest LobPine <<  either longleaf or loblolly can qualify the stand
+Optional 1-100 50 LongleafPine LobPine <<together they can qualify the stand. You could stipulate that together they must be Highest
+
+SiteSelection Complete 
+MinTimeSinceDamage 5 
+CohortsRemoved	SpeciesList
+	>>Species 	Selection
+		>>-------	--------
+		LobPine		1-100		(60%)	
+		LongleafPine	1-100		(60%)
+		ShortPine	All
+		SlashPine	All
+		WhiteOak	All
+		TurkeyOak	All
+		SweetGum	All
+		RedMaple	All
+		TulipTree	All
+					
+<<REPLANT?
+
+>>**************************************** 
+Prescription Clearcut_Slash		
+StandRanking 	Economic	
+	SlashPine	100	10
+MinimumAge 10	
+
+ForestTypeTable << red pine
+>> InclusionRule ageRange percentCells species
+Optional 1-250 highest SlashPine 
+Optional 1-250 50 SlashPine LongleafPine
+
+SiteSelection Complete
+CohortsRemoved ClearCut
+Plant LongleafPine		<<Replant only longleaf
+
+
+>> -----------------------------------------------------------
+HarvestImplementations		
+>> MgmtArea Descriptions:					
+>> 1 = Harvested by DoD
+
+
+>>ma	presc			target%	start	stop	COMMENTS
+1	Thinnning_Pines	2.4%	0	50 			<< 0.019 x 100   2500acres/year = 1011.7 HA/year, 2.4
+4	Clearcut_Slash	10.6%	0	50			<< Place holder
+
+
+
+PrescriptionMaps	harvest/prescripts-{timestep}.img
+BiomassMaps		harvest/biomass-removed-{timestep}.img
+EventLog            harvest/harvest-event-log.csv
+SummaryLog	    harvest/summary-log.csv
+
+
