@@ -1,0 +1,36 @@
+Here are the R scripts for the final report:
+
+****************************
+Harvest data- 
+Graphs extent and biomass removed for all the scenarios
+
+
+*********************
+RX fire data-
+Graphing_Rx_fire_time_AllScenarios_DOD
+Graphs of Rx fire extent and biomass removed for all the scenarios
+
+Graphing_Rx_fire_time_DOD
+Graphs of Rx fire extent and biomass removed for just a few scenarios, 
+Thought this might be useful if we want to simplify the graphs.
+
+
+*****************************
+For the biomass graphs
+You first run the script called:
+MultipleScenarios_SppMaps.R
+Which collects all the biomass maps and calculates a landscape average.
+
+To do, this you'll have to update the look up table called:
+Scenarios_071919.csv
+
+where the first column of the csv is the folder for each scenario/simulation.  
+The output from that script is a csv file called:
+SppBiomass-Summary.csv
+
+This file is used for the graphing scripts, one for total biomass and one for each species.
+Graphing_totalBiomass_time_AllScenarios_DOD.R
+Graphing_SpeciesBiomass_time_AllScenarios_DOD.R
+
+
+

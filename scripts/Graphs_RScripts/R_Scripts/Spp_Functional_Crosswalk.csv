@@ -1,0 +1,11 @@
+CommonName,FunctionalGroup,ConiferHardwood,Spp_Number,GraphName
+LobPine,1,Conifer,1,Loblolly Pine
+LongleafPine,1,Conifer,2,Longleaf Pine
+ShortPine,1,Conifer,3,Shortleaf Pine
+SlashPine,1,Conifer,4,Slash Pine
+WhiteOak,1,Hardwood,5,White Oak
+TurkeyOak,1,Hardwood,6,Turkey Oak
+SweetGum,2,Hardwood,7,Sweet Gum
+RedMaple,2,Hardwood,8,Red Maple
+TulipTree,2,Hardwood,9,Tulip Tree
+TotalBiomass,All,Both,10,Total

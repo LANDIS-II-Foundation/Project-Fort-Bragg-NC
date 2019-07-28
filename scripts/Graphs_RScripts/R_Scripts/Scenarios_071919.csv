@@ -1,0 +1,13 @@
+Folder,Model,Scenarios,CC_Scenario,GraphOrder
+Disturbance_Testing_GCC_Num_20_071519,NECN,"NECN, BAU Fire, Hot-Dry CC",Hot-Dry,3
+Disturbance_Testing_GCC_Num_2_071519,NECN,"NECN, BAU Fire, Hot-Wet CC",Hot-Wet,1
+Disturbance_Testing_LessFire_GCC_Num_20_071519,NECN,"NECN, Less Fire, Hot-Dry CC",Hot-Dry,7
+Disturbance_Testing_LessFire_GCC_Num_2_071519,NECN,"NECN, Less Fire, Hot-Wet CC",Hot-Wet,5
+Disturbance_Testing_MoreFire_GCC_Num_20_071519,NECN,"NECN, More Fire, Hot-Dry CC",Hot-Wet,11
+Disturbance_Testing_MoreFire_GCC_Num_2_071519,NECN,"NECN, More Fire, Hot-Wet CC",Hot-Wet,9
+Disturbance_Testing_PnET_GCC_Num_20_071519,PnET,"PnET, BAU Fire, Hot-Dry CC",Hot-Dry,4
+Disturbance_Testing_PnET_GCC_Num_2_071519,PnET,"PnET, BAU Fire, Hot-Wet CC",Hot-Wet,2
+Disturbance_Testing_PnET_LessFire_GCC_Num_2_071519,PnET,"PnET, Less Fire, Hot-Wet CC",Hot-Wet,8
+Disturbance_Testing_PnET_LessFire_GCC_Num_20_071519,PnET,"PnET, Less Fire, Hot-Dry CC",Hot-Dry,6
+Disturbance_Testing_PnET_More_Fire_GCC_Num_2_071519,PnET,"PnET, More Fire, Hot-Wet CC",Hot-Wet,10
+Disturbance_Testing_PnET_MoreFire_GCC_Num_20_071519,PnET,"PnET, More Fire, Hot-Dry CC",Hot-Dry,12
