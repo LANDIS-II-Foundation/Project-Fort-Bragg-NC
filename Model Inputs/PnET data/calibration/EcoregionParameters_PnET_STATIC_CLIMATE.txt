@@ -1,0 +1,4 @@
+LandisData  EcoregionParameters
+EcoregionParameters	PrecLossFrac	climateFileName			SoilType	RootingDepth	LeakageFrac	SnowSublimFrac
+SALO1				0.3				climate_pnet_singleYear_average.txt	SALO		1000			1			0.15
+

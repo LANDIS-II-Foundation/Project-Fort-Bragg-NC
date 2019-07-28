@@ -1,0 +1,17 @@
+LandisData "Climate Config"				
+		
+ClimateTimeSeries			Daily_SequencedYears 
+>>Daily_SequencedYears  Daily_RandomYears  Daily_AverageAllYears Daily_SequencedYears
+ClimateFile					FortBragg_New_Climate3-13-2019_pnet.csv
+ClimateFileFormat			Daily_Temp-K_Precip-mmDay
+
+SpinUpClimateTimeSeries		Daily_SequencedYears   
+>>Daily_AverageAllYears  Daily_RandomYears Daily_SequencedYears
+SpinUpClimateFile			FortBragg_New_Climate3-13-2019_pnet.csv
+SpinUpClimateFileFormat		Daily_Temp-K_Precip-mmDay
+
+UsingFireClimate					yes
+>>RelativeHumiditySlopeAdjust 		0.7
+SpringStart							30
+WinterStart							320
+
