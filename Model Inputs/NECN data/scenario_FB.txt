@@ -21,8 +21,9 @@ CellLength  100 << meters, 100 x 100 m = 1 hectare
 >> Disturbance Extensions   	Initialization File
 >> ----------------------   	-------------------
 
-"Biomass Harvest Biomass Rank"	FB_Harvest_BAU_042519-0612.txt  << The harvest model
-"SCRAPPLE"			SCRAPPLE_FB053019.txt  << The fire model
+"Biomass Harvest Biomass Rank"	"../Harvest data/FB_Harvest_BAU_042519-0612.txt"  << The harvest model
+"SCRAPPLE"			"../Fire data/SCRAPPLE_FB053019.txt  << The fire model
+"Base Hurricane"		"../Hurricane data/base-hurricane.txt << Hurricane model
 
 >>   DisturbancesRandomOrder  yes  << optional parameter; default = no
 
