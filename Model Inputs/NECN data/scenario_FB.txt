@@ -1,5 +1,6 @@
 LandisData  Scenario
 
+
 Duration  50
 
 Species   species_DoD.txt
@@ -13,27 +14,44 @@ EcoregionsMap   ./ClimateMap_FortBragg.tif
 CellLength  100 << meters, 100 x 100 m = 1 hectare
 
 
->> Succession Extension     	Initialization File
->> --------------------     	-------------------
+
+
+>> NOTE:  This example assumes that you have downloaded and installed 
+>> the correpsonding extensions.  These extensions are currently packaged
+>> together as a package.
+
+
+>> Succession Extension     Initialization File
+
+>> --------------------     -------------------
   
-"NECN Succession"    		NECNSuccession_FortBragg_v3.txt	
+"NECN Succession"    NECNSuccession_FortBragg_v3.txt	<<NECNSuccession_FortBragg.txt
 
->> Disturbance Extensions   	Initialization File
->> ----------------------   	-------------------
 
-"Biomass Harvest Biomass Rank"	"../Harvest data/FB_Harvest_BAU_042519-0612.txt"  << The harvest model
-"SCRAPPLE"			"../Fire data/SCRAPPLE_FB053019.txt  << The fire model
-"Base Hurricane"		"../Hurricane data/base-hurricane.txt << Hurricane model
 
+>> Disturbance Extensions   Initialization File
+
+>> ----------------------   -------------------
+
+"Biomass Harvest Biomass Rank"	FB_Harvest_BAU_042519-0612.txt  <<FB_Harvest_BAU_042519-0522.txt  <<FB_Harvest_BAU_042519.txt
+"Base Hurricane"              "Base-Hurricane_v2.txt"
+"SCRAPPLE"		SCRAPPLE_FB082219.txt  <<SCRAPPLE_FB_IntensityClass_ML.txt	<<SCRAPPLE_FB_IntensityClass.txt <<SCRAPPLE_FB.txt  <<SCRAPPLE_FB052219.txt 		<<
 >>   DisturbancesRandomOrder  yes  << optional parameter; default = no
 
 
->> Other Extensions         	Initialization File
->> ----------------         	-------------------
-
-"Output Biomass Reclass"    	output-biomass-reclass.txt
-"Output Biomass"	    	output-biomass.txt
-"Output Biomass Community"  	output_Biomass_Community.txt
 
 
->>RandomNumberSeed  4,357  << optional parameter; default = the seed is randomly generated using the current time
+>> Other Extensions         Initialization File
+
+>> ----------------         -------------------
+
+"Output Biomass Reclass"	    output-biomass-reclass.txt
+"Output Biomass"	    output-biomass.txt
+"Output Biomass Community" output_Biomass_Community.txt
+
+
+
+
+
+>>RandomNumberSeed  357  << optional parameter; default = the seed is
+                         << randomly generated using the current time
