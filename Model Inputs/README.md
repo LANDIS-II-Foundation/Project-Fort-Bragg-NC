@@ -1,7 +1,8 @@
-# Project-Fort-Bragg-NC
-Model inputs for Ft. Bragg simulations of climate change, hurricanes, and management
+# Model Inputs
 
-This folder contains the input files for the LANDIS-II model for the Ft. Bragg simulations.
+This folder contains the input files for the LANDIS-II model for the Ft. Bragg simulations.  There are two primary models within LANDIS-II that were simulated:  NECN (http://www.landis-ii.org/extensions/net-ecosystem-cn-succession) and PnET (http://www.landis-ii.org/extensions/pnet-succession).  Within each of these sub-folders is a batch file (.bat) that will run a full scenario, including fire, harvesting, and hurricanes.  
+
+Before running a scenario, the model must be installed.  See the 'installers' sub-folder.
 
 # Sub-folder NECN data
 
