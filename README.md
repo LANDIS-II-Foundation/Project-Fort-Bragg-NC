@@ -5,7 +5,8 @@ Model inputs for Ft. Bragg simulations of climate change, hurricanes, and manage
 The purpose of this repository is to allow fast and efficient reproduction of the results that have been delivered to ESTCP and Ft. Bragg.  Requirements for re-running the models and scenarios include:
 * Installation of the LANDIS-II model (see http://www.landis-ii.org/home) and the extensions (see the 'installers' sub-folder)
 * Copy all the material in the 'Model Inputs' sub-folder to a local computer.
-* Launch the scenarios using the includied batch file.
+* Scenario/Simulation extension options incude Succession (NECN or PnET), Fire, Hurricane, and harvest.
+* Launch the scenarios using the included batch file.
 
 Analysis of model outputs requires installation of the R statistical package.  Example scripts have been provided in the 'scripts' sub-folder.
 
