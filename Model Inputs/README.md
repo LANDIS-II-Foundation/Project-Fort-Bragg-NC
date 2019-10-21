@@ -12,6 +12,10 @@ The scenario is defined by this file:  scenario_FB.txt
 To run the scenario, use this batch file:  BatchFile.bat
 
 # Sub-folder PnET data
+Contains all the files and maps necessary to run the 'PnET' scenarios.
+
+The scenarios are defined by these files:  SCENARIO_PNET_FIRE3_HAD_HURRICANE.txt & SCENARIO_PNET_FIRE3_BCC_HURRICANE.txt
+To run these scenarios, use the relative batch files:  !!_FIRE3_BCC_HURRICANE.bat, !!_FIRE3_HAD_HURRICANE.bat
 
 
 # Sub-folder Fire Data
