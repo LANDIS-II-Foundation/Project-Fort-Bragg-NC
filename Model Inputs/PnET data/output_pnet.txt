@@ -1,0 +1,28 @@
+LandisData  "Output-PnET"
+Timestep  5  
+Species   All	   
+	  
+>>Biomass	output/biomass/{species}/biomass{timestep}.img
+AbovegroundBiomass output/agbiomass/{species}/AGBiomass_{timestep}.img
+AgeDistribution output/AgeDist/Age{timestep}.img
+
+>>CohortsPerSpecies	output/CohortsPerspecies/{species}/cohorts{timestep}.img
+>>LeafAreaIndex output/LeafAreaIndex/lai{timestep}.img
+>>EstablishmentProbability	output/EstablishmentProbability/{species}/EstablishmentProbability{timestep}.img
+>>CohortBalance	"output/TotalCohorts.txt"
+>>AnnualTranspiration	output/Transpiration/Trans{timestep}.img
+>>Water output/SoilWater/water{timestep}.img
+>>SubCanopyPAR output/SubCanopyPar/SCpar-{timestep}.img
+>>BelowgroundBiomass output/BelowGroundBiom/BGB{timestep}.img
+>>WoodyDebris output/WoodyDebris/WoodyDebris{timestep}.img
+>>Litter	output/NonWoodyDebris/Litter{timestep}.img
+>>DeadCohortNumbers	output/DeadNumbers/{species}/Cnt{species}{timestep}.img
+>>DeadCohortAges	output/DeadAges/{species}/Age{species}{timestep}.img
+>>SpeciesSpecEstFileName "output/Establishments.txt"
+
+MonthlyNetPsn output/MonthlyNetPsn/{species}/MonthlyNetPsn{timestep}.img
+MonthlyFolResp output/MonthlyFolResp/{species}/MonthlyFolResp{timestep}.img
+MonthlyGrossPsn output/MonthlyGrossPsn/{species}/MonthlyGrossPsn{timestep}.img
+MonthlyMaintResp output/MonthlyMaintResp/{species}/MonthlyMaintResp{timestep}.img
+
+

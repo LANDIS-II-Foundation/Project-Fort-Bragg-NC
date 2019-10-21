@@ -1,0 +1,18 @@
+LandisData  Ecoregions
+
+>>         Map
+>> Active  Code  Name   Description
+>> ------  ----  -----  -----------
+	no	0   Outside_ft_bragg  	"All inactive cells"     
+	no  1   In_but_non_active  	"More active cells"
+    yes	2	LOSA				"Loamy sand"		    
+	yes 3 	SALO 				"Sandy loam"          
+	yes 4 	SAND 				"Sand"                
+	yes 6 	LOAM 				"Loam"                
+	yes 7 	G_SALO				"Gravelly sandy loam" 
+	yes 9 	F_SALO 				"Fine sandy loam"     
+>>no more 11 after new climate map Feb 2019.
+>>	yes 11 	SILO 				"Silt loam"           
+	yes 16 	SNCL 				"Sandy clay loam"     
+	yes 18 	CLLO				"Mucky loam (I'm calling it a clay loam)"         
+	

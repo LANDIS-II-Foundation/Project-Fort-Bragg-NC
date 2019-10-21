@@ -1,0 +1,3 @@
+LandisData PNEToutputsites
+PNEToutputsites  Row	Column
+Site1 100  100

@@ -1,0 +1,14 @@
+LandisData  EcoregionParameters
+EcoregionParameters	PrecLossFrac	climateFileName			SoilType	RootingDepth	LeakageFrac	SnowSublimFrac
+>>FortBragg			0.73			"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SILO		1000			1			0.15
+LOSA				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	LOSA		1000			1			0.15
+SALO 				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SALO		1000			1			0.15
+SAND 				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SAND		1000			1			0.15
+LOAM 				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	LOAM		1000			1			0.15
+G_SALO				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SALO		1000			1			0.15  >>this soil name is Gravely sandy loam but gravely wasn't option.
+F_SALO 				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SALO		1000			1			0.15  >>this soil was fine sandy loam but fine wasn't option.
+SNCL 				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	SNCL		1000			1			0.15
+CLLO				0.3				"C:/LANDIS_INPUTS/climate_static_classic_average1_year.txt"	CLLO		1000			1			0.15
+
+>>no more SILO 11 after new climate map Feb 2019.
+>>SILO 				0.3				climate_static_classic_average1_year.txt	SILO		1000			1			0.15

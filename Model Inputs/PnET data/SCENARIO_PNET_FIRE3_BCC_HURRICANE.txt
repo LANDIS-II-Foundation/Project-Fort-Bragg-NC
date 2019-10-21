@@ -1,0 +1,29 @@
+LandisData Scenario
+Duration 50
+Species "C:/LANDIS_INPUTS/species_FortBragg3_29.txt" 
+Ecoregions "C:/LANDIS_INPUTS/EcoRegions_FortBragg.txt"
+EcoregionsMap "C:/LANDIS_INPUTS/ecoregion_soils_FortBragg.tif" 
+CellLength 100 << meters
+>> Succession Extension     Initialization File
+>> --------------------     -------------------
+"PnET-Succession" "C:/LANDIS_INPUTS/PnET_successionFortBragg_BCC_NO_SPIN.txt"  <<PnET_successionFortBragg_static.txt" 
+>> Disturbance Extensions   Initialization File
+>> ----------------------   -------------------
+>>   "Base Fire"  	    base-fire_v2.txt
+>>   DisturbancesRandomOrder  yes  << optional parameter; default = no
+"Base Hurricane"		"C:/LANDIS_INPUTS/Base-Hurricane.txt"
+"Biomass Harvest"  "C:/LANDIS_INPUTS/HARVEST_7_18.txt"
+"SCRAPPLE"		"C:/LANDIS_INPUTS/SCRAPPLE_FB_3yr.txt"  <<SCRAPPLE_FB_IntensityClass_ML.txt	<<SCRAPPLE_FB_IntensityClass.txt <<SCRAPPLE_FB.txt  <<SCRAPPLE_FB052219.txt 		<<
+
+>> "Land Use 2.0" "spinup_subtract_luplus.txt"
+>>"No development turned on."
+>>"Base Wind" "wind_zone4.txt"
+>> Other Extensions         Initialization File
+>> ----------------         -------------------
+"Output-PnET" "C:/LANDIS_INPUTS/output_pnet.txt"
+"Output Biomass-by-Age"		"C:/LANDIS_INPUTS/output_Biomass-by-Age.txt"
+"Output Biomass"	    "C:/LANDIS_INPUTS/output-biomass.txt"
+
+>> "Output Max Species Age""Y:/LANDIS_INPUTS/output_extensions/max-spp-age.output.txt"
+>>RandomNumberSeed  4,357  << optional parameter; default = the seed is randomly generated using the current time
+>> CO2 increasing with climate: FALSE

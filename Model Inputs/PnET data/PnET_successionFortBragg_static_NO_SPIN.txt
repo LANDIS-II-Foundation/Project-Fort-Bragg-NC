@@ -1,0 +1,9 @@
+LandisData "PnET-Succession"
+PnET-Succession  	Value Timestep 5 StartYear 2010 SeedingAlgorithm  WardSeedDispersal Latitude  35.1 PNEToutputsites "C:/LANDIS_INPUTS/Outputsites_PNET.txt" InitialCommunities     "C:/LANDIS_INPUTS/ic_adjust_for_below_ground33.txt"  <<Initial_Community_Fort_Bragg_with_Biomass.txt"  
+InitialCommunitiesMap   "C:/LANDIS_INPUTS/IC_Map_FortBragg.tif" <<"ft_bragg_IC2_20_2019.tif" <<ft_bragg_IC2_6_2019.tif"  
+>>"ICMap_FortBragg.tif"
+
+  LitterMap	"C:/LANDIS_INPUTS/SOM1surfC_FortBragg.tif"
+  WoodyDebrisMap	"C:/LANDIS_INPUTS/CWD_FortBragg.tif"
+  PnETSpeciesParameters  "C:/LANDIS_INPUTS/PNET_SpeciesParameters.txt"  EcoregionParameters  "C:/LANDIS_INPUTS/EcoregionParameters_PnET_STATIC_CLIMATE.txt" DisturbanceReductions   "C:/LANDIS_INPUTS/DisturbanceReductions.txt" PnETGenericParameters "C:/LANDIS_INPUTS/Gereric_parameters_FortBragg.txt" 
+ClimateConfigFile	"C:/LANDIS_INPUTS/climate-generator-baseline.txt"
