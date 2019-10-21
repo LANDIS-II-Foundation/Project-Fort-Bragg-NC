@@ -1,2 +1,3 @@
-# Project-Fort-Bragg-NC
-Model inputs for Ft. Bragg simulations of climate change, hurricanes, and management
+# Fire data
+
+Model inputs for Ft. Bragg fire simulations produced via the SCRPPLE fire model:  http://www.landis-ii.org/extensions/scrapple
