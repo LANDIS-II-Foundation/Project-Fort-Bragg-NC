@@ -1,6 +1,6 @@
 LandisData  "Base Hurricane"
 
-Timestep  2
+Timestep  1
 
 >> Likelihood a given year will have this number of storms
 >> On the US southeastern seaboard, based on 1979 -- 2018.
